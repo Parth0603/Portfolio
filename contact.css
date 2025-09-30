@@ -10,6 +10,7 @@
     overflow: scroll;
     box-shadow: 0 0 7px black;
     color: #d9d9d9;
+    display: none;
   }
 
   .contact-hero-page {
