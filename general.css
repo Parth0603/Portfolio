@@ -1,0 +1,209 @@
+/* general css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	/* color: #d9d9d9; */
+}
+.transition {
+	transition: all 3s ease;
+}
+.hidden {
+	display: none;
+}
+.fullscreen {
+	background: #323232 !important;
+	/* z-index: 10000 !important; */
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	height: 100vh !important;
+	width: 100vw !important;
+	left: 0 !important;
+	bottom: 0 !important;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	/* background: #000; */
+	overflow-x: hidden;
+	position: relative;
+	height: auto;
+}
+.project-page,.contact-page{
+	padding-bottom: 60px !important;
+}
+.taskbar {
+	height: 50px;
+	width: 100%;
+	background: #d9d9d963;
+	position: fixed;
+	/* filter: blur(1px); */
+	bottom: 0;
+	display: flex;
+	align-items: center;
+
+	padding: 0 10px;
+	padding-right: 20px;
+}
+.taskbar::after {
+	content: "";
+	height: 80%;
+	width: 0.005rem;
+	/* border-radius: 0.001rem; */
+	background: rgb(26, 25, 25);
+	
+	position: absolute;
+	/* bottom: 0; */
+	top: 50%;
+	transform: translateY(-50%);
+	right: 118px;
+	/* background: #000; */
+	box-shadow: 0.005rem 0 1px black;
+}
+.extra-menu {
+	filter: blur(0px);
+	height: 35px;
+	width: 35px;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+ .home-page{
+	color: white;
+}
+.taskbar{
+	color: #141313 !important;  
+}
+.toolbar {
+	position: relative;
+	height: 100%;
+}
+.top-toolbar {
+	z-index: 100000;
+	width: 100%;
+	height: 50px;
+	background: #1e1e1e;
+	position: sticky;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	box-sizing: border-box;
+	border-bottom: 2px solid #333;
+}
+
+.exit {
+	height: 100%;
+	width: 50px;
+	padding: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.exit:hover {
+	background: red;
+	cursor: pointer;
+}
+
+.minimize {
+	height: 100%;
+	width: 50px;
+	padding-inline: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.minimize:hover {
+	background: rgba(172, 171, 171, 0.616);
+	cursor: pointer;
+}
+
+.maximize {
+	height: 100%;
+	width: 50px;
+	padding-inline: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.maximize:hover {
+	background: rgba(172, 171, 171, 0.616);
+	cursor: pointer;
+}
+
+.top-toolbar h2 {
+	position: absolute;
+	left: 20px;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #d9d9d9;
+	letter-spacing: 1px;
+	user-select: none;
+}
+
+.exit-href {
+	height: 100%;
+}
+
+* {
+	user-select: none;
+}
+.rightMenu {
+	position: absolute;
+	background: #323232;
+	border: 1px solid white;
+	z-index: 10;
+	display: none;
+	flex-direction: column;
+	border-radius: 5px;
+}
+.rightClickContent {
+	padding: 8px;
+	color: white;
+	border-bottom: 1px solid gray;
+	width: 170px;
+	cursor: pointer;
+}
+.name h3 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	user-select: none;
+	/* color: black; */
+	font-family: cursive;
+}
+
+.social-links a {
+	height: 25px;
+}
+.social-links {
+	/* height: 50px; */
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	/* height: 50px; */
+}
+.social-icons {
+	/* align-self:center; */
+	height: 25px !important;
+	width: 25px !important;
+	border-radius: 5px;
+}
+
+
+

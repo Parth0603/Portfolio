@@ -1,0 +1,153 @@
+.project-heroPage
+.project-hero
+.project
+.project-heroPage {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.slide, .slide-four {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tech-badge {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.demo-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.github-btn {
+  background: #333;
+  color: white;
+}
+
+.demo-btn:hover, .github-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-card {
+    max-width: 100%;
+  }
+  
+  .project-content {
+    padding: 15px;
+  }
+  
+  .project-title {
+    font-size: 1.3rem;
+  }
+  
+  .project-desc {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-heroPage {
+    padding: 10px;
+  }
+  
+  .project-links {
+    flex-direction: column;
+  }
+  
+  .project-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .tech-stack {
+    gap: 5px;
+  }
+  
+  .tech-badge {
+    font-size: 0.75rem;
+  }
+}
